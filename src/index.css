@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 18px 4px;
+  box-shadow: 1px 1px 10px #c0c0c0;
+}
+
+.card .card-title {
+  text-align: center;
+  line-height: 20%;
+  text-transform: uppercase;
+}
+
+.card .card-body {
+  width: 100%;
+  background-color: rgb(231, 230, 229);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .card-body .bio-profile-pic {
+
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgb(207, 203, 203); 
+  transition: .2s all;
+}
+
+.card .card-body .bio-profile-pic:hover {
+
+  box-shadow: 0 0 5px rgb(0, 255, 128);
+  transform: rotateZ(360deg);
+}
+
+.card .card-body .bio-profile-pic img {
+
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.card .card-body .bio-name {
+
+  line-height: 0;
+}
+
+.card .card-body .bio-hobbies {
+
+  margin: 20px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.card .card-body .bio-hobbies .hobby {
+
+  padding: 4px 6px;
+  background-color: rgb(101, 190, 108);
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  transition: .4s all;
+}
+
+.card .card-body .bio-hobbies .hobby:hover {
+
+  box-shadow: 2px 2px 3px #000;
+}
+
+.card .card-footer {
+  margin-top: 8px;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  background-color: aqua;
+  border-radius: 0 0 20px 20px;
+}
